@@ -1,18 +1,11 @@
-
 import java.util.Scanner;
 
 public class PlayerClass {
+    private Scanner scanner = new Scanner(System.in);
 
-    Scanner scanner = new Scanner(System.in);
+    public int getUserInput(String promp) {
+        System.out.print(promp + " ");
 
- public int getGuess (String prompt) {
-     System.out.print(prompt + " ");
-     return scanner.nextInt();
- }
-
-
-
-
-
-
+        return scanner.nextInt();
+    }
 }
